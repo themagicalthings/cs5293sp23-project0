@@ -1,12 +1,12 @@
-- CS5293SP23 Project0 
-- by Vamsi Thokala
+**- CS5293SP23 Project0 
+- by Vamsi Thokala**
 
--Norman Daily Incident Summary 
+**-Norman Daily Incident Summary** 
 
 This code extracts data from a PDF file containing Norman, Oklahoma's daily incident summary and stores it in a Pandas DataFrame. It then creates a SQLite3 database named norman.db and populates it with the extracted data.
 Prerequisites
 
-This code requires the following libraries:
+This code requires the following **libraries**:
 
     urllib.request
     pypdf
@@ -14,7 +14,7 @@ This code requires the following libraries:
     pandas
     sqlite3
 
-Installation
+**Installation**
 
 You can install the required libraries using pip:
 
@@ -28,13 +28,13 @@ Usage
 
 python
 
-url = "https://www.normanok.gov/sites/default/files/documents/2023-01/2023-01-22_daily_incident_summary.pdf"
+**url** = "https://www.normanok.gov/sites/default/files/documents/2023-01/2023-01-22_daily_incident_summary.pdf"
 
-# Extract data from PDF and store it in a Pandas DataFrame
+**Extract data from PDF and store it in a Pandas DataFrame**
 incident_data = fetchincidents(url)
 incidents_df = extract_incidents(incident_data)
 
-# Create and populate the SQLite3 database
+**Create and populate the SQLite3 database**
 createdb()
 populatedb(incidents_df)
 
@@ -52,7 +52,7 @@ populatedb
 
 This function populates the incidents table in the norman.db database with the data stored in the Pandas DataFrame.
 
-Files included:
+**Files included:**
 
     main.py
     project0.py
@@ -70,7 +70,7 @@ Usage:
     Run main.py to execute the program.
     Run test_data.py to run the test cases.
 
-Functions:
+**Functions:**
 
     fetchincidents(url):
     This function fetches the data from the provided input URL using urllib package.
@@ -87,7 +87,7 @@ Functions:
     status():
     This function fetches the required output.
 
-Test cases:
+**Test cases:**
 
     fetchincidents(url):
     This function tests whether the returned data is empty or not.
@@ -104,11 +104,11 @@ Test cases:
     status():
     This function tests whether the data that we have received in the extractincidents(incidents) is of list type or not.
 
-How to Run the file    
+**How to Run the file **   
 
 Run the command pipenv run python project0/main.py --incidents [URL], where [URL] is the URL of the PDF file containing the incident reports. This will fetch the data from the PDF, store it in the database, and output the count of each incident type.
 
-Output :
+**Output :**
 
 <img width="1470" alt="Screenshot 2023-03-07 at 8 09 12 PM" src="https://user-images.githubusercontent.com/115323632/223606040-ee3a52ed-c355-42e2-b5c6-9df9968825f4.png">
 
