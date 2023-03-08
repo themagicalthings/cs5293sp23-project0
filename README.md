@@ -114,4 +114,6 @@ Run the command pipenv run python project0/main.py --incidents [URL], where [URL
 
 <img width="675" alt="Screenshot 2023-03-07 at 8 10 50 PM" src="https://user-images.githubusercontent.com/115323632/223606069-0d7e054d-db5e-44b1-b905-1e6d69f407a4.png">
 
+**Demo Video on how to Run :**
 
+https://user-images.githubusercontent.com/115323632/223613809-f5a0c354-7528-4103-9a27-dcd0badf41f2.mp4
