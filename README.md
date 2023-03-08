@@ -20,7 +20,7 @@ You can install the required libraries using pip:
 
 pip install urllib pypdf re pandas sqlite3
 
-Usage
+**Usage**
 
     Step 1: Define the URL of the PDF file containing the Norman Daily Incident Summary. The current URL is set as the default.
     Step 2: Call the extract_incidents function, passing the incident data fetched from the URL as an argument. This function returns a Pandas DataFrame containing the extracted incident data.
@@ -38,16 +38,16 @@ incidents_df = extract_incidents(incident_data)
 createdb()
 populatedb(incidents_df)
 
-Functions
+**Functions**
 fetchincidents
 
 This function takes the URL of the PDF file containing the Norman Daily Incident Summary as an argument. It uses urllib.request to fetch and return the incident data.
-extract_incidents
+**extract_incidents**
 
 This function takes the incident data fetched using fetchincidents as an argument. It extracts the relevant information like incident date, incident number, location, nature, and incident ORI from the PDF using the PyPDF library. It then stores the extracted data in a Pandas DataFrame.
 createdb
 
-This function creates a SQLite3 database named norman.db and a table named incidents with columns named incident_time, incident_number, incident_location, nature, and incident_ori.
+This function creates a **SQLite3 database** named norman.db and a table named incidents with columns named incident_time, incident_number, incident_location, nature, and incident_ori.
 populatedb
 
 This function populates the incidents table in the norman.db database with the data stored in the Pandas DataFrame.
@@ -58,11 +58,11 @@ This function populates the incidents table in the norman.db database with the d
     project0.py
     test_data.py
 
-Requirements:
+**Requirements:**
 
 Python 3.x, PyPDF2, pandas, urllib, sqlite3
 
-Usage:
+**Usage:**
 
     Clone the repository.
     Download the incident report PDF file from the Norman Police Department Activity Reports.
@@ -78,13 +78,13 @@ Usage:
     extractincidents(incidents):
     This function extracts and parses the data and stores the data in the form of lists to insert into the database. It uses PyPDF2 package to extract data from the PDF file.
 
-    createdb():
+   **createdb():**
     This function creates a new database by connecting to SQLite3.
 
-    populatedb(incidents):
+  **populatedb(incidents):
     This function inserts the data that is present in the form of lists into the database.
 
-    status():
+   **status():**
     This function fetches the required output.
 
 **Test cases:**
