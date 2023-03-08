@@ -1,7 +1,6 @@
-cs5293sp23-project0
-Name : Vamsi Thokala
-
-Norman Daily Incident Summary
+- CS5293SP23 Project0 
+- by Vamsi Thokala
+Norman Daily Incident Summary 
 
 This code extracts data from a PDF file containing Norman, Oklahoma's daily incident summary and stores it in a Pandas DataFrame. It then creates a SQLite3 database named norman.db and populates it with the extracted data.
 Prerequisites
